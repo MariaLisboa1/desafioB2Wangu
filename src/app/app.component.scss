@@ -1,0 +1,36 @@
+$base-border: 2px solid #ffffff;
+
+.content {
+  border: $base-border;
+}
+
+.content::after {
+  content: " ";
+  display: block;
+  padding: 15px;
+}
+
+.namePlanet::after {
+  content: " ";
+  display: block;
+  height: 2px;
+  background: white;
+}
+
+.row {
+    padding: 10px;
+}
+
+.titleFilm {
+  padding: 10px;
+}
+
+button {
+  border: $base-border;
+  margin: 10px auto;
+}
+
+button:hover,
+button:focus {
+  background: #4c4c4c;
+}
