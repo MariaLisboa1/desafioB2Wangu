@@ -29,9 +29,9 @@
     </div>
   </div>
 
-  <div class="row titleFilm" *ngIf="noMovie">
+  <div class="row titleFilm" >
     <div class="col text-center" >
-      FEATURED IN: <p *ngFor="let titleFilms of films"> {{titleFilms.films}} </p>
+      FEATURED IN: {{noFilm}} <p *ngFor="let titleFilms of films"> {{titleFilms.films}} </p>
     </div>
   </div>
 
@@ -40,7 +40,9 @@
 <div class="container">
   <div class="row">
     <div class="col text-center">
-      <button class="btn text-white" (click)="next()">NEXT</button>
+      <button class="btn text-white" id="btn" (click)="next()">
+        <span id="span">NEXT</span>
+      </button>
     </div>
   </div>
 </div>

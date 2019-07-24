@@ -1,9 +1,16 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
 
 body {
-    background: url("./assets/darth.jpg") ;
+    background: url("./assets/darth.jpg");
     height: 100px;
     padding: 10px;
     text-transform: uppercase;
     font-family: 'Roboto Mono', monospace;
+}
+
+@media (max-width: 760px) {
+    body {
+        background: url("./assets/darth.jpg") no-repeat center;
+        height: 100%;
+    }
 }
